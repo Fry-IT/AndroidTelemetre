@@ -372,6 +372,25 @@ SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processo
 }
 
 
+SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1SetPointsLocation(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3, jint jarg4, jint jarg5) {
+  Processor *arg1 = (Processor *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(Processor **)&jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (int)jarg4; 
+  arg5 = (int)jarg5; 
+  (arg1)->SetPointsLocation(arg2,arg3,arg4,arg5);
+}
+
+
 SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1drawText(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_, jstring jarg4) {
   Processor *arg1 = (Processor *) 0 ;
   int arg2 ;

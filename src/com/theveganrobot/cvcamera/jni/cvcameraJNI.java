@@ -41,6 +41,6 @@ class cvcameraJNI {
   public final static native void Processor_resetChess(long jarg1, Processor jarg1_);
   public final static native int Processor_getNumberDetectedChessboards(long jarg1, Processor jarg1_);
   public final static native void Processor_calibrate(long jarg1, Processor jarg1_, String jarg2);
+  public final static native void Processor_SetPointsLocation(long jarg1, Processor jarg1_, int jarg2, int jarg3, int jarg4, int jarg5);
   public final static native void Processor_drawText(long jarg1, Processor jarg1_, int jarg2, long jarg3, image_pool jarg3_, String jarg4);
-  public final static native void Processor_SetPointsLocation(long jarg1, Processor jarg1_, int x1, int y1, int x2, int y2);
 }

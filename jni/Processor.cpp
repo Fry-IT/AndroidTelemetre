@@ -32,7 +32,7 @@ Processor::~Processor()
   // TODO Auto-generated destructor stub
 }
 
-void SetPointsLocation(int x1, int y1, int x2, int y2){
+void Processor::SetPointsLocation(int x1, int y1, int x2, int y2){
 	LocationFirstPoint = Point(x1,y1);
 	LocationSecondPoint = Point(x2,y2);
 }
@@ -167,17 +167,17 @@ void Processor::detectAndDrawFeatures(int input_idx, image_pool* pool, int featu
   	char buffer [33];
 
 
-  	floodFill(img, Point(img.cols/2,img.rows/2), CV_RGB(255,255,255), &rect1, CV_RGB(5,5,5), CV_RGB(3,3,3)); //flood and fill object in center
-  	floodFill(img, Point((img.cols/2)+50,(img.cols/2)+50), CV_RGB(255,255,255), &rect2, CV_RGB(5,5,5), CV_RGB(3,3,3)); //flood and fill second object
+  	floodFill(img, LocationFirstPoint, CV_RGB(255,255,255), &rect1, CV_RGB(5,5,5), CV_RGB(3,3,3)); //flood and fill object in center
+  	floodFill(img, LocationSecondPoint, CV_RGB(255,255,255), &rect2, CV_RGB(5,5,5), CV_RGB(3,3,3)); //flood and fill second object
 
-  	circle(img,Point(img.cols/2,img.rows/2), 5, CV_RGB(255,0,0), -1); //Point of fist object
-  	circle(img,Point((img.cols/2)+50,(img.cols/2)+50), 5, CV_RGB(255,0,0), -1); //Point of second object
+  	circle(img,LocationFirstPoint, 5, CV_RGB(255,0,0), -1); //Point of fist object
+  	circle(img,LocationSecondPoint, 5, CV_RGB(255,0,0), -1); //Point of second object
 
   	rectangle(img, rect1, CV_RGB(255,0,0),1); //Rectangle Object 1
   	rectangle(img, rect2, CV_RGB(255,0,0),1); //Rectangle Object 2
 
   	Postit_Captured_Width = rect1.width;
-  	Postit_Captured_Width = rect1.height;
+  	Postit_Captured_Height = rect1.height;
   	Box_Captured_Width = rect2.width;
   	Box_Captured_Height = rect2.height;
 

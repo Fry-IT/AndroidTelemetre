@@ -47,6 +47,7 @@ public:
 	
 	void calibrate(const char* filename);
 	
+	void SetPointsLocation(int x1, int y1, int x2, int y2);
 	void drawText(int idx, image_pool* pool, const char* text);
 
 };

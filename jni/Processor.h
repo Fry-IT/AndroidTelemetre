@@ -30,6 +30,8 @@ public:
   Processor();
   virtual ~Processor();
 
+  void SetPointsLocation(int x1, int y1, int x2, int y2);
+
   void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
 
   bool detectAndDrawChessboard(int idx, image_pool* pool);

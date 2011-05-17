@@ -62,12 +62,12 @@ public class Processor {
     cvcameraJNI.Processor_calibrate(swigCPtr, this, filename);
   }
 
+  public void SetPointsLocation(int x1, int y1, int x2, int y2) {
+    cvcameraJNI.Processor_SetPointsLocation(swigCPtr, this, x1, y1, x2, y2);
+  }
+
   public void drawText(int idx, image_pool pool, String text) {
     cvcameraJNI.Processor_drawText(swigCPtr, this, idx, image_pool.getCPtr(pool), pool, text);
   }
-  
-  public void SetLocationFirstPoint(int x1, int y1, int x2, int y2) {
-	    cvcameraJNI.Processor_SetPointsLocation(swigCPtr, this, x1, y1, x2, y2);
-	  }
 
 }
