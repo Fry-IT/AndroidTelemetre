@@ -32,6 +32,11 @@ Processor::~Processor()
   // TODO Auto-generated destructor stub
 }
 
+void SetPointsLocation(int x1, int y1, int x2, int y2){
+	LocationFirstPoint = Point(x1,y1);
+	LocationSecondPoint = Point(x2,y2);
+}
+
 void Processor::detectAndDrawFeatures(int input_idx, image_pool* pool, int feature_type)
 {
   FeatureDetector* fd = 0;

@@ -55,6 +55,9 @@ private:
   cv::Mat distortion;
   cv::Size imgsize;
 
+  cv::Point LocationFirstPoint;
+  cv::Point LocationSecondPoint;
+
 };
 
 #endif /* PROCESSOR_H_ */

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+import android.R.integer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -282,6 +283,31 @@ public class CVCamera extends Activity {
 		// make the glview overlay ontop of video preview
 		mPreview.setZOrderMediaOverlay(false);
 
+		mPreview.setOnTouchListener(new View.OnTouchListener() {
+			
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				Log.d("OpenCV", "Location is:" + event.getX() + ", " + event.getY());
+				
+				int x1=0, y1=0, x2=0, y2=0;
+				
+				if(x1 != 0 && y1 !=0)
+				{
+					x1 = (int) event.getX();
+					y1 = (int) event.getY();
+				}
+				else{
+					x2 = (int) event.getX();
+					y2 = (int) event.getY();
+					//processor.SetLocationFirstPoint(x1, y1, x2, y2);
+					Toast.makeText(CVCamera.this,"First: " + x1 + ", " + x2 + "// Second: "+ x2 + ", " + y2,Toast.LENGTH_SHORT).show();
+				}
+				
+				
+				return false;
+			}
+		});
+		
 		glview = new GL2CameraViewer(getApplication(), false, 0, 0);
 		glview.setZOrderMediaOverlay(true);
 
