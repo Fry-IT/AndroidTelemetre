@@ -220,54 +220,6 @@ using namespace cv;
 extern "C" {
 #endif
 
-SWIGEXPORT jint JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_DETECT_1FAST_1get(JNIEnv *jenv, jclass jcls) {
-  jint jresult = 0 ;
-  int result;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (int) 0;
-  jresult = (jint)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jint JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_DETECT_1STAR_1get(JNIEnv *jenv, jclass jcls) {
-  jint jresult = 0 ;
-  int result;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (int) 1;
-  jresult = (jint)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jint JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_DETECT_1SURF_1get(JNIEnv *jenv, jclass jcls) {
-  jint jresult = 0 ;
-  int result;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (int) 2;
-  jresult = (jint)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jint JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_DETECT_1MSER_1get(JNIEnv *jenv, jclass jcls) {
-  jint jresult = 0 ;
-  int result;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (int) 3;
-  jresult = (jint)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT jlong JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_new_1Processor(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   Processor *result = 0 ;

@@ -32,35 +32,12 @@ public:
 
   void MeasureAndDisplay(int input_idx, image_pool* pool, int ReferenceLocationX, int ReferenceLocationY, int ObjectToMeasureX, int ObjectToMeasureY);
 
-  //void SetPointsLocation(int x1, int y1, int x2, int y2);
-
-  //void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
-
-//  bool detectAndDrawChessboard(int idx, image_pool* pool);
-//
-//  void resetChess();
-//
-//  int getNumberDetectedChessboards();
-//
-//  void calibrate(const char* filename);
-//
-//  void drawText(int idx, image_pool* pool, const char* text);
-  
 private:
-  
-  cv::StarFeatureDetector stard;
-  cv::FastFeatureDetector fastd;
-  cv::SurfFeatureDetector surfd;
-  cv::MserFeatureDetector mserd;
-//  std::vector<cv::KeyPoint> keypoints;
-//  std::vector<std::vector<cv::Point2f> > imagepoints;
 
-//  cv::Mat K;
-//  cv::Mat distortion;
-//  cv::Size imgsize;
-
-//  cv::Point LocationFirstPoint;
-//  cv::Point LocationSecondPoint;
+  cv::StarFeatureDetector stard; // CLEAN IT
+  cv::FastFeatureDetector fastd; // CLEAN IT
+  cv::SurfFeatureDetector surfd; // CLEAN IT
+  cv::MserFeatureDetector mserd; // CLEAN IT
 
 };
 

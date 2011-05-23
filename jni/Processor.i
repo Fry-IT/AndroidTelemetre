@@ -11,10 +11,6 @@ using namespace cv;
 /**
  * some constants, see Processor.h
  */
-#define DETECT_FAST 0
-#define DETECT_STAR 1
-#define DETECT_SURF 2
-#define DETECT_MSER 3
 
 //import the android-cv.i file so that swig is aware of all that has been previous defined
 //notice that it is not an include....
@@ -34,21 +30,7 @@ class Processor {
 public:
 	Processor();
 	virtual ~Processor();
-
 	
 	void MeasureAndDisplay(int input_idx, image_pool* pool, int ReferenceLocationX, int ReferenceLocationY, int ObjectToMeasureX, int ObjectToMeasureY);
-	
-	//void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
-
-	//bool detectAndDrawChessboard(int idx,image_pool* pool);
-	
-	//void resetChess();
-	
-	//int getNumberDetectedChessboards();
-	
-	//void calibrate(const char* filename);
-	
-	//void SetPointsLocation(int x1, int y1, int x2, int y2);
-	//void drawText(int idx, image_pool* pool, const char* text);
 
 };

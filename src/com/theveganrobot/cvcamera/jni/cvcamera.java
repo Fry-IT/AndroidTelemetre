@@ -8,5 +8,5 @@
 
 package com.theveganrobot.cvcamera.jni;
 
-public class cvcamera implements cvcameraConstants {
+public class cvcamera {
 }

@@ -30,10 +30,6 @@ class cvcameraJNI {
 	}
 
 
-  public final static native int DETECT_FAST_get();
-  public final static native int DETECT_STAR_get();
-  public final static native int DETECT_SURF_get();
-  public final static native int DETECT_MSER_get();
   public final static native long new_Processor();
   public final static native void delete_Processor(long jarg1);
   public final static native void Processor_MeasureAndDisplay(long jarg1, Processor jarg1_, int jarg2, long jarg3, image_pool jarg3_, int jarg4, int jarg5, int jarg6, int jarg7);
