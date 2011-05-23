@@ -1,3 +1,3 @@
 #!/bin/bash
 echo uninstalling CVCamera from phone
-adb uninstall com.theveganrobot.cvcamera
+adb uninstall com.fryit.androidtelemeter

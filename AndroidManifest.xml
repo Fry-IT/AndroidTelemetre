@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.theveganrobot.cvcamera" android:versionCode="7" android:versionName="7.0"
+	package="com.fryit.androidtelemeter" android:versionCode="7" android:versionName="7.0"
 	>
 	<application android:debuggable="false" android:icon="@drawable/icon">
-		<activity android:name=".CVCamera" android:screenOrientation="landscape"
+		<activity android:name="TelemeterActivity" android:screenOrientation="landscape"
 			android:configChanges="orientation|keyboardHidden|keyboard"
 			android:label="@string/app_name"
 			>

@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.theveganrobot.cvcamera.jni;
+package com.fryit.androidtelemeter.jni;
 
 import com.opencv.jni.image_pool;// import the image_pool interface for playing nice with
 								 // android-opencv

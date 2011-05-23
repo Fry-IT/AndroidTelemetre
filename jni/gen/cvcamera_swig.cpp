@@ -220,7 +220,7 @@ using namespace cv;
 extern "C" {
 #endif
 
-SWIGEXPORT jlong JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_new_1Processor(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_fryit_androidtelemeter_jni_cvcameraJNI_new_1Processor(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   Processor *result = 0 ;
   
@@ -232,7 +232,7 @@ SWIGEXPORT jlong JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_new_1Pr
 }
 
 
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_delete_1Processor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_fryit_androidtelemeter_jni_cvcameraJNI_delete_1Processor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   Processor *arg1 = (Processor *) 0 ;
   
   (void)jenv;
@@ -242,7 +242,7 @@ SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_delete_1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1MeasureAndDisplay(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_, jint jarg4, jint jarg5, jint jarg6, jint jarg7) {
+SWIGEXPORT void JNICALL Java_com_fryit_androidtelemeter_jni_cvcameraJNI_Processor_1MeasureAndDisplay(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_, jint jarg4, jint jarg5, jint jarg6, jint jarg7) {
   Processor *arg1 = (Processor *) 0 ;
   int arg2 ;
   image_pool *arg3 = (image_pool *) 0 ;
