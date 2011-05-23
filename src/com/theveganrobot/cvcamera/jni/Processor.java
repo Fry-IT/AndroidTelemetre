@@ -42,32 +42,8 @@ public class Processor {
     this(cvcameraJNI.new_Processor(), true);
   }
 
-  public void detectAndDrawFeatures(int idx, image_pool pool, int feature_type) {
-    cvcameraJNI.Processor_detectAndDrawFeatures(swigCPtr, this, idx, image_pool.getCPtr(pool), pool, feature_type);
-  }
-
-  public boolean detectAndDrawChessboard(int idx, image_pool pool) {
-    return cvcameraJNI.Processor_detectAndDrawChessboard(swigCPtr, this, idx, image_pool.getCPtr(pool), pool);
-  }
-
-  public void resetChess() {
-    cvcameraJNI.Processor_resetChess(swigCPtr, this);
-  }
-
-  public int getNumberDetectedChessboards() {
-    return cvcameraJNI.Processor_getNumberDetectedChessboards(swigCPtr, this);
-  }
-
-  public void calibrate(String filename) {
-    cvcameraJNI.Processor_calibrate(swigCPtr, this, filename);
-  }
-
-  public void SetPointsLocation(int x1, int y1, int x2, int y2) {
-    cvcameraJNI.Processor_SetPointsLocation(swigCPtr, this, x1, y1, x2, y2);
-  }
-
-  public void drawText(int idx, image_pool pool, String text) {
-    cvcameraJNI.Processor_drawText(swigCPtr, this, idx, image_pool.getCPtr(pool), pool, text);
+  public void MeasureAndDisplay(int input_idx, image_pool pool, int ReferenceLocationX, int ReferenceLocationY, int ObjectToMeasureX, int ObjectToMeasureY) {
+    cvcameraJNI.Processor_MeasureAndDisplay(swigCPtr, this, input_idx, image_pool.getCPtr(pool), pool, ReferenceLocationX, ReferenceLocationY, ObjectToMeasureX, ObjectToMeasureY);
   }
 
 }

@@ -30,19 +30,21 @@ public:
   Processor();
   virtual ~Processor();
 
-  void SetPointsLocation(int x1, int y1, int x2, int y2);
+  void MeasureAndDisplay(int input_idx, image_pool* pool, int ReferenceLocationX, int ReferenceLocationY, int ObjectToMeasureX, int ObjectToMeasureY);
 
-  void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
+  //void SetPointsLocation(int x1, int y1, int x2, int y2);
 
-  bool detectAndDrawChessboard(int idx, image_pool* pool);
+  //void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
 
-  void resetChess();
-
-  int getNumberDetectedChessboards();
-
-  void calibrate(const char* filename);
-
-  void drawText(int idx, image_pool* pool, const char* text);
+//  bool detectAndDrawChessboard(int idx, image_pool* pool);
+//
+//  void resetChess();
+//
+//  int getNumberDetectedChessboards();
+//
+//  void calibrate(const char* filename);
+//
+//  void drawText(int idx, image_pool* pool, const char* text);
   
 private:
   
@@ -50,15 +52,15 @@ private:
   cv::FastFeatureDetector fastd;
   cv::SurfFeatureDetector surfd;
   cv::MserFeatureDetector mserd;
-  std::vector<cv::KeyPoint> keypoints;
-  std::vector<std::vector<cv::Point2f> > imagepoints;
+//  std::vector<cv::KeyPoint> keypoints;
+//  std::vector<std::vector<cv::Point2f> > imagepoints;
 
-  cv::Mat K;
-  cv::Mat distortion;
-  cv::Size imgsize;
+//  cv::Mat K;
+//  cv::Mat distortion;
+//  cv::Size imgsize;
 
-  cv::Point LocationFirstPoint;
-  cv::Point LocationSecondPoint;
+//  cv::Point LocationFirstPoint;
+//  cv::Point LocationSecondPoint;
 
 };
 

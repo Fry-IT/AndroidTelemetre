@@ -36,18 +36,19 @@ public:
 	virtual ~Processor();
 
 	
+	void MeasureAndDisplay(int input_idx, image_pool* pool, int ReferenceLocationX, int ReferenceLocationY, int ObjectToMeasureX, int ObjectToMeasureY);
 	
-	void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
+	//void detectAndDrawFeatures(int idx, image_pool* pool, int feature_type);
 
-	bool detectAndDrawChessboard(int idx,image_pool* pool);
+	//bool detectAndDrawChessboard(int idx,image_pool* pool);
 	
-	void resetChess();
+	//void resetChess();
 	
-	int getNumberDetectedChessboards();
+	//int getNumberDetectedChessboards();
 	
-	void calibrate(const char* filename);
+	//void calibrate(const char* filename);
 	
-	void SetPointsLocation(int x1, int y1, int x2, int y2);
-	void drawText(int idx, image_pool* pool, const char* text);
+	//void SetPointsLocation(int x1, int y1, int x2, int y2);
+	//void drawText(int idx, image_pool* pool, const char* text);
 
 };

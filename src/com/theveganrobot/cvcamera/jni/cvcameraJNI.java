@@ -36,11 +36,5 @@ class cvcameraJNI {
   public final static native int DETECT_MSER_get();
   public final static native long new_Processor();
   public final static native void delete_Processor(long jarg1);
-  public final static native void Processor_detectAndDrawFeatures(long jarg1, Processor jarg1_, int jarg2, long jarg3, image_pool jarg3_, int jarg4);
-  public final static native boolean Processor_detectAndDrawChessboard(long jarg1, Processor jarg1_, int jarg2, long jarg3, image_pool jarg3_);
-  public final static native void Processor_resetChess(long jarg1, Processor jarg1_);
-  public final static native int Processor_getNumberDetectedChessboards(long jarg1, Processor jarg1_);
-  public final static native void Processor_calibrate(long jarg1, Processor jarg1_, String jarg2);
-  public final static native void Processor_SetPointsLocation(long jarg1, Processor jarg1_, int jarg2, int jarg3, int jarg4, int jarg5);
-  public final static native void Processor_drawText(long jarg1, Processor jarg1_, int jarg2, long jarg3, image_pool jarg3_, String jarg4);
+  public final static native void Processor_MeasureAndDisplay(long jarg1, Processor jarg1_, int jarg2, long jarg3, image_pool jarg3_, int jarg4, int jarg5, int jarg6, int jarg7);
 }

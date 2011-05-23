@@ -290,112 +290,14 @@ SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_delete_1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1detectAndDrawFeatures(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_, jint jarg4) {
+SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1MeasureAndDisplay(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_, jint jarg4, jint jarg5, jint jarg6, jint jarg7) {
   Processor *arg1 = (Processor *) 0 ;
   int arg2 ;
   image_pool *arg3 = (image_pool *) 0 ;
-  int arg4 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  (void)jarg3_;
-  arg1 = *(Processor **)&jarg1; 
-  arg2 = (int)jarg2; 
-  arg3 = *(image_pool **)&jarg3; 
-  arg4 = (int)jarg4; 
-  (arg1)->detectAndDrawFeatures(arg2,arg3,arg4);
-}
-
-
-SWIGEXPORT jboolean JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1detectAndDrawChessboard(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
-  jboolean jresult = 0 ;
-  Processor *arg1 = (Processor *) 0 ;
-  int arg2 ;
-  image_pool *arg3 = (image_pool *) 0 ;
-  bool result;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  (void)jarg3_;
-  arg1 = *(Processor **)&jarg1; 
-  arg2 = (int)jarg2; 
-  arg3 = *(image_pool **)&jarg3; 
-  result = (bool)(arg1)->detectAndDrawChessboard(arg2,arg3);
-  jresult = (jboolean)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1resetChess(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  Processor *arg1 = (Processor *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(Processor **)&jarg1; 
-  (arg1)->resetChess();
-}
-
-
-SWIGEXPORT jint JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1getNumberDetectedChessboards(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jint jresult = 0 ;
-  Processor *arg1 = (Processor *) 0 ;
-  int result;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(Processor **)&jarg1; 
-  result = (int)(arg1)->getNumberDetectedChessboards();
-  jresult = (jint)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1calibrate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
-  Processor *arg1 = (Processor *) 0 ;
-  char *arg2 = (char *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(Processor **)&jarg1; 
-  arg2 = 0;
-  if (jarg2) {
-    arg2 = (char *)jenv->GetStringUTFChars(jarg2, 0);
-    if (!arg2) return ;
-  }
-  (arg1)->calibrate((char const *)arg2);
-  if (arg2) jenv->ReleaseStringUTFChars(jarg2, (const char *)arg2);
-}
-
-
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1SetPointsLocation(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3, jint jarg4, jint jarg5) {
-  Processor *arg1 = (Processor *) 0 ;
-  int arg2 ;
-  int arg3 ;
   int arg4 ;
   int arg5 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(Processor **)&jarg1; 
-  arg2 = (int)jarg2; 
-  arg3 = (int)jarg3; 
-  arg4 = (int)jarg4; 
-  arg5 = (int)jarg5; 
-  (arg1)->SetPointsLocation(arg2,arg3,arg4,arg5);
-}
-
-
-SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processor_1drawText(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_, jstring jarg4) {
-  Processor *arg1 = (Processor *) 0 ;
-  int arg2 ;
-  image_pool *arg3 = (image_pool *) 0 ;
-  char *arg4 = (char *) 0 ;
+  int arg6 ;
+  int arg7 ;
   
   (void)jenv;
   (void)jcls;
@@ -404,13 +306,11 @@ SWIGEXPORT void JNICALL Java_com_theveganrobot_cvcamera_jni_cvcameraJNI_Processo
   arg1 = *(Processor **)&jarg1; 
   arg2 = (int)jarg2; 
   arg3 = *(image_pool **)&jarg3; 
-  arg4 = 0;
-  if (jarg4) {
-    arg4 = (char *)jenv->GetStringUTFChars(jarg4, 0);
-    if (!arg4) return ;
-  }
-  (arg1)->drawText(arg2,arg3,(char const *)arg4);
-  if (arg4) jenv->ReleaseStringUTFChars(jarg4, (const char *)arg4);
+  arg4 = (int)jarg4; 
+  arg5 = (int)jarg5; 
+  arg6 = (int)jarg6; 
+  arg7 = (int)jarg7; 
+  (arg1)->MeasureAndDisplay(arg2,arg3,arg4,arg5,arg6,arg7);
 }
 
 
