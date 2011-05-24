@@ -5,4 +5,5 @@
     <string name="app_name_menulist">MenuList</string>
 <string name="app_description">app to measure objects thanks to Camera device.</string>
 <string name="Changes">Release 0.0.1</string>
+<string name="btn_ReferenceLocation">Button Reference</string>
 </resources>

@@ -57,7 +57,11 @@ void Processor::MeasureAndDisplay(int input_idx, image_pool* pool, int Reference
 		string Text_Box_Height;
 		Point Text_Location_Box_Width =  Point(100,100); // TODO CHANGE IT
 		Point Text_Location_Box_Height =  Point(100,100); // TODO CHANGE IT
-		char buffer [33];
+		Point middleRect2Width;
+		Point middleRect2Height;
+		char buffer1 [33];
+		char buffer2 [33];
+
 
 		floodFill(img, ReferenceLocation, CV_RGB(255,255,255), &rect1, CV_RGB(5,5,5), CV_RGB(3,3,3)); //flood and fill object in center
 		floodFill(img, ObjectToMeasure, CV_RGB(255,255,255), &rect2, CV_RGB(5,5,5), CV_RGB(3,3,3)); //flood and fill second object
@@ -76,9 +80,16 @@ void Processor::MeasureAndDisplay(int input_idx, image_pool* pool, int Reference
 		Box_Width = ((Box_Captured_Width * Postit_Width)/Postit_Captured_Width);
 		Box_Height = ((Box_Captured_Height * Postit_Height)/Postit_Captured_Height);
 
-		sprintf(buffer,"%d,%d",Box_Width, Box_Height); //TODO OPTIMISE IT
+		sprintf(buffer1,"%d",Box_Width); //TODO OPTIMISE IT
+		sprintf(buffer2,"%d",Box_Height); //TODO OPTIMISE IT
 
-		putText(img, buffer, Text_Location_Box_Width, 1, 4, cvScalar(0, 255, 0, 255), 3, 8, false);
+		middleRect2Width =  Point(rect2.x +(rect2.width/2), rect2.y);
+		middleRect2Height =  Point(rect2.x, rect2.y +(rect2.height/2));
+
+		putText(img, buffer1, middleRect2Width, 1, 2, cvScalar(255, 0, 0, 255), 3, 8, false);
+		putText(img, buffer2, middleRect2Height, 1, 2, cvScalar(255, 0, 0, 255), 3, 8, false);
+
+
 }
 
 void saveCameraParams(const string& filename, Size imageSize, Size boardSize, float squareSize, float aspectRatio,
