@@ -5,13 +5,24 @@
 	<application android:debuggable="false" android:icon="@drawable/icon">
 		<activity android:name="TelemeterActivity" android:screenOrientation="landscape"
 			android:configChanges="orientation|keyboardHidden|keyboard"
-			android:label="@string/app_name"
+			android:label="@string/app_name_telemeter"
 			>
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+				
+		<activity android:name="ListMenuActivity" android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden|keyboard"
+			android:label="@string/app_name_menulist"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
 		
 		<activity android:name="com.opencv.camera.CameraConfig" android:label="@string/app_name"
 			android:screenOrientation="landscape" 

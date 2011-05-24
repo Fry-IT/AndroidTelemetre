@@ -18,10 +18,10 @@
 
 #include "image_pool.h"
 
-#define DETECT_FAST 0
-#define DETECT_STAR 1
-#define DETECT_SURF 2
-#define DETECT_MSER 3
+#define DETECT_FAST 0 // CLEAN IT
+#define DETECT_STAR 1 // CLEAN IT
+#define DETECT_SURF 2 // CLEAN IT
+#define DETECT_MSER 3 // CLEAN IT
 
 class Processor
 {

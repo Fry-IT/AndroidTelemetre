@@ -38,7 +38,7 @@ SWIG_IS = $(wildcard jni/*.i)
 
 SWIG_MAIN = jni/cvcamera.i
 
-SWIG_JAVA_DIR = src/com/theveganrobot/cvcamera/jni
+SWIG_JAVA_DIR = src/com/fryit/androidtelemeter/jni
 SWIG_JAVA_OUT = $(wildcard $(SWIG_JAVA_DIR)/*.java)
 
 

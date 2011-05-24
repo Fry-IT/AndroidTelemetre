@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string name="app_name">Telemeter</string>
+    <string name="app_name_telemeter">Telemeter</string>
+    <string name="app_name_menulist">MenuList</string>
 <string name="app_description">app to measure objects thanks to Camera device.</string>
 <string name="Changes">Release 0.0.1</string>
 </resources>
